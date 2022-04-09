@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OsT-dr-Lma">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--물품-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="apple_client" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iqg-jy-3RB">
+                                <rect key="frame" x="0.0" y="88" width="414" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="물품" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ble-1d-khR">
+                                        <rect key="frame" x="45" y="22" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.65098039215686276" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="lig-aB-U6L"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iqg-jy-3RB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ENg-Bo-9a9"/>
+                            <constraint firstItem="iqg-jy-3RB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S7w-Tx-ctW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iqg-jy-3RB" secondAttribute="trailing" id="oaz-9l-DLb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="물품" image="archivebox" catalog="system" id="7DJ-B0-iQC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="-604.01785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6oD-d0-ksr">
+            <objects>
+                <navigationController id="OsT-dr-Lma" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mqI-J2-fTv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.65098039215686276" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tdI-sR-WTC" kind="relationship" relationship="rootViewController" id="Ahw-Rf-rW3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbV-5J-Ubm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932" y="78"/>
+        </scene>
+        <!--빌리미-->
+        <scene sceneID="4ek-fp-NwB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="tdI-sR-WTC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="빌리미" id="Ngf-Ka-fhl"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T5H-tJ-Ksh">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="lhe-It-I97"/>
+                        <segue destination="KjH-tE-ZlT" kind="relationship" relationship="viewControllers" id="53S-bN-oMD"/>
+                        <segue destination="q8D-DI-h8l" kind="relationship" relationship="viewControllers" id="0Vx-WP-chY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8DN-Ga-L6w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+        <!--기록-->
+        <scene sceneID="bya-zc-c3X">
+            <objects>
+                <viewController id="KjH-tE-ZlT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qHB-md-dyK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0d0-1H-XiR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="기록" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ee-Ao-jx9">
+                                        <rect key="frame" x="26" y="22" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.65098039220000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="sBd-Up-chu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gMa-9M-1x1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0d0-1H-XiR" firstAttribute="trailing" secondItem="gMa-9M-1x1" secondAttribute="trailing" id="3JD-Tz-fAz"/>
+                            <constraint firstItem="0d0-1H-XiR" firstAttribute="top" secondItem="gMa-9M-1x1" secondAttribute="top" id="6XX-C0-MVh"/>
+                            <constraint firstItem="0d0-1H-XiR" firstAttribute="leading" secondItem="gMa-9M-1x1" secondAttribute="leading" id="d0Y-6x-Rcr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="기록" image="book" catalog="system" id="iao-Is-U7J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZ4-4e-zVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="77.678571428571431"/>
+        </scene>
+        <!--문의-->
+        <scene sceneID="wte-LZ-P6g">
+            <objects>
+                <viewController id="q8D-DI-h8l" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q90-Ah-RSt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eLM-fz-3hs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="문의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA1-fz-DSY">
+                                        <rect key="frame" x="38" y="22" width="30" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33333333329999998" green="0.65098039220000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="lgw-WC-6Ey"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="39G-jg-HVh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eLM-fz-3hs" firstAttribute="leading" secondItem="39G-jg-HVh" secondAttribute="leading" id="8cP-yg-UjC"/>
+                            <constraint firstItem="eLM-fz-3hs" firstAttribute="trailing" secondItem="39G-jg-HVh" secondAttribute="trailing" id="inv-7b-ZPU"/>
+                            <constraint firstItem="eLM-fz-3hs" firstAttribute="top" secondItem="39G-jg-HVh" secondAttribute="top" id="s0w-gj-GBV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="문의" image="ellipsis.bubble" catalog="system" id="nwP-0J-j4m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvV-Zw-Ccg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890" y="763"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="archivebox" catalog="system" width="128" height="106"/>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="ellipsis.bubble" catalog="system" width="128" height="110"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
